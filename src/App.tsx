@@ -1,10 +1,14 @@
-import React from 'react';
+import React                from 'react';
+import ErrorBoundary        from "./components/ErrorBoundaries/GenericError"
+
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      Hello
-    </div>
+    <ErrorBoundary>
+      <div className="App">
+        Ecommerce App
+      </div>
+    </ErrorBoundary>
   );
 }
 
